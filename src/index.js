@@ -1,3 +1,2 @@
-import './styles.css'
-
-console.log('Index js')
+import './index.html'
+import './styles/global.css'
