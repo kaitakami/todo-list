@@ -4,6 +4,11 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
-  darkMode: 'class', // Change this when creating dark/clear button function
+  daisyui: {
+    themes: ["light", "dark", "cupcake", "bumblebee", "emerald", "corporate", "synthwave", "retro", "cyberpunk", "valentine", "halloween", "garden", "forest", "aqua", "lofi", "pastel", "fantasy", "wireframe", "black", "luxury", "dracula", "cmyk", "autumn", "business", "acid", "lemonade", "night", "coffee", "winter"],
+  },
+  plugins: [
+    require('@tailwindcss/typography'),
+    require("daisyui"),
+  ],
 }

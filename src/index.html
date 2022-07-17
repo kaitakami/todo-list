@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finis</title>
+</head>
+
+<body class="">
+  <!-- NAVBAR -->
+  <div class="navbar fixed top-0 z-10 shadow-sm md:shadow-xl">
+    <!-- Open / Close aside bar -->
+    <div class="navbar-start">
+      <label class="btn btn-circle btn-ghost swap swap-rotate">
+
+        <!-- this hidden checkbox controls the state -->
+        <input id="asidebar-button" type="checkbox" />
+
+        <!-- hamburger icon -->
+        <svg class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+          viewBox="0 0 512 512">
+          <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+        </svg>
+
+        <!-- close icon -->
+        <svg class="swap-on fill-current" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+          viewBox="0 0 512 512">
+          <polygon
+            points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+        </svg>
+
+      </label>
+    </div>
+    <div class="navbar-center prose">
+      <h1 class="text-2xl">Finis</h1>
+    </div>
+    <div class="navbar-end">
+      <div class="dropdown dropdown-end">
+        <label tabindex="0" class="btn btn-ghost btn-circle">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+          </svg>
+        </label>
+        <ul tabindex="0" class="dropdown-content menu bg-base-200 p-2 shadow rounded-box w-52 mt-4">
+          <li><a href="https://github.com/kaitakami/" target=”_blank” rel=”noopener noreferrer”>Github</a></li>
+          <li><a href="https://kaitakami/blog/finis" target=”_blank” rel=”noopener noreferrer”>Contribute</a></li>
+          <li><a href="https://kaitakami/blog/finis#about" target=”_blank” rel=”noopener noreferrer”>About</a></li>
+        </ul>
+      </div>
+    </div>
+    </button>
+  </div>
+  </div>
+  <!-- Vertical navbar with logo, filters (color and weekly / monthly), projects -->
+  <aside id="asidebar"
+    class="toggle-open w-full md:w-1/4 asidebar-height bg-base-200 fixed mt-16 mb-16 shadow-inner flex flex-col transition-all ease-in-out justify-between pb-10 text-center">
+    <div class="prose">
+      <div class="divider"></div>
+      <h2 class="mt-0">Projects</h2>
+      <div id="projects">
+        <!-- Here the projects will be displayed -->
+      </div>
+      <button class="btn  w-2/3 bg-base-200 hover:bg-base-100 transition-all ease-in-out outline-dashed border-none">
+        <p class="text-gradient-1">Add new Project</p>
+      </button>
+      <div class="divider"></div>
+      <h2 class="mt-0">Filters</h2>
+      <div>
+        <!-- Here the filters by [color, date] will de displayed -->
+      </div>
+    </div>
+
+    <div>
+      <ul class="menu menu-horizontal bg-base-100 rounded-box">
+        <li>
+          <a href="https://twitter.com/kaitakami_/" target="_blank" rel=”noopener noreferrer”>
+            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <label for="my-modal-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg></label>
+          <input type="checkbox" id="my-modal-4" class="modal-toggle" />
+          <label for="my-modal-4" class="modal cursor-pointer">
+            <label class="modal-box relative" for="">
+              <h3 class="text-lg font-bold">About</h3>
+              <p class="py-4">MIT by Kai Takami.<br> The main goal of this open source project is to create the best to
+                do list website in the market 🚀</p>
+            </label>
+          </label>
+        </li>
+        <li>
+          <a>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+            </svg>
+
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <!-- The main area is going to be a flex area  -->
+  <main id="tasks-container"
+    class="absolute flex w-full top-16 transition-all ease-in-out left-0 -z-10 px-6 py-10 lg:px-64 md:py-24 flex-col gap-5">
+    <div class="task">
+      <div class="task-information">
+        <p class="">🚀</p>
+        <div class="divider divider-horizontal"></div>
+        <p class="">Make my bed</p>
+        <!-- Date should be displayed here -->
+      </div>
+      <div class="task-buttons">
+        <!-- Delete button (completed button) -->
+        <!-- Edit button (edit task-information) -->
+      </div>
+    </div>
+    <button class="btn bg-base-200 hover:bg-base-100 transition-all ease-in-out outline-dashed border-none">
+      <p class="text-gradient-2">Add new Task</p>
+    </button>
+  </main>
+
+  <span class="md:left-1/4"></span>
+</body>
+
+</html>
